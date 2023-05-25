@@ -1,5 +1,5 @@
 import React from "react";
-import apple from "@/public/image/Apples.webp";
+import apple from "@/public/image/Apples.png";
 import Image from "next/image";
 import {AiOutlinePlus} from "react-icons/ai"
 const Card = ({
@@ -9,7 +9,7 @@ const Card = ({
   discount = 0.4,
 }) => {
   return (
-    <div className="w-[350px] h-[450px] shadow-md border border-1 border-gray-100">
+    <div className="w-[300px] h-[400px] shadow-md border border-1 border-gray-100">
       <div className="p-3">
         <Image src={photo} alt={name} className="mx-auto cursor-pointer" />
         <p>
