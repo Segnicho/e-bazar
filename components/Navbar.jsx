@@ -9,9 +9,11 @@ const Navbar = () => {
   return (
     <div className="navbar sticky top-0 z-50 bg-base-100 ">
       <div className="navbar-start">
-        <a className="btn btn-ghost normal-case text-xl hover:bg-white">
-          e- <span className="text-accent">Bazar</span>
-        </a>
+        <Link className="cursor-pointer" href="/">
+          <p className="btn btn-ghost normal-case text-xl hover:bg-white ">
+            e- <span className="text-accent">Bazar</span>
+          </p>
+        </Link>
         <select
           name=""
           id=""
