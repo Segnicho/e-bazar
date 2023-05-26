@@ -85,6 +85,7 @@ const Sidebar = () => {
               onClick={() => handleClick(index)}
             >
               <span>{prod.icon}</span>
+
               <p className="ml-2">{prod.name}</p>
               {activeProduct === index ? (
                 <RiArrowDropUpLine className="ml-auto" />
@@ -105,6 +106,5 @@ const Sidebar = () => {
     </div>
   );
 };
-
 
 export default Sidebar;
