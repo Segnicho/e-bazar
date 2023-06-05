@@ -6,7 +6,7 @@ export default function Home() {
       {/* Navbar is inside layout and wraps this main component */}
       <Hero />
       <div className="grid grid-cols-6">
-        <aside className="sticky top-22 block h-full aside">
+        <aside className="sticky top-0 block h-full aside">
           <Sidebar />
         </aside>
         <div className="flex gap-4 m-3 flex-wrap col-span-5">

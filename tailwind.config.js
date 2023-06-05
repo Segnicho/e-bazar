@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         sec: "#019376",
         prim: "#1f2937",
+        bodybg: "#f3f4f6",
       },
     },
   },
