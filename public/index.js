@@ -10,5 +10,6 @@ import fashion from "./image/shop/fashion-thumbnail.png";
 import makeup from "./image/shop/Makeup-thumbnail.png";
 import publisher from "./image/shop/Publisher-logo-thumbnail.png";
 
+import contact from './image/contact.png'
 
-export {mango, strawberry, clementines, chicken, furniture, bakery, fashion, makeup, publisher, backpack}
+export {mango, strawberry, clementines, chicken, furniture, bakery, fashion, makeup, publisher, backpack, contact}
