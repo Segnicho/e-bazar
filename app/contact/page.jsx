@@ -3,10 +3,10 @@ import { contact } from "@/public";
 import Image from "next/image";
 const Contact = () => {
   const contactInfo = {
-    address: "123 Main St, City, Country",
-    phone: "+1 123-456-7890",
+    address: "123 King George VI St, Addis Ababa, Ethiopia",
+    phone: "+251 960848687",
     website: "www.example.com",
-    image: contact, // Placeholder image from Unsplash
+    image: contact,
   };
 
   return (
@@ -20,7 +20,7 @@ const Contact = () => {
               className="w-full rounded-md"
             />
           </div>
-          < div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3">
             <div>
               <p className="font-semibold">Address</p>
               <p className="mb-2">{contactInfo.address}</p>

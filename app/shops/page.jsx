@@ -6,7 +6,7 @@ import React from "react";
 const Shops = () => {
   return (
     <div>
-      <div className="ml-10">
+      <div className="m-8 px-7">
         <h1 className="font-bold  mt-5 ml-3">All Shops</h1>
         <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 max-sm:grid-cols-1">
           {shops.map((shop, index) => (

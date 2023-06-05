@@ -1,22 +1,20 @@
-import Layout from '@/components/Layout'
-import './globals.css'
-import { Inter } from 'next/font/google'
+import Layout from "@/components/Layout";
+import "./globals.css";
+import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'e-Bazar',
-  description: 'E-commerce app built with Next.js',
-}
+  title: "e-Bazar",
+  description: "E-commerce app built with Next.js",
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='bg-bodybg'>
-        <Layout >
-        {children}
-        </Layout>
-        </body>
+      <body className="min-h-screen bg-bodybg">
+        <Layout>{children}</Layout>
+      </body>
     </html>
-  )
+  );
 }

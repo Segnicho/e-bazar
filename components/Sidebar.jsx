@@ -76,7 +76,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="m-2 stick top-10">
+    <div className="m-2 sticky top-14 pt-2">
       <div className="flex flex-col gap-3">
         {product.map((prod, index) => (
           <div key={prod.name} className="flex flex-col ">
