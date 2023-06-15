@@ -1,11 +1,12 @@
 "use client";
 import React from "react";
-import SwitchTheme from "./commons/Theme";
 import Link from "next/link";
-
+import { UserButton } from "@clerk/nextjs";
 import { CiApple } from "react-icons/ci";
+import SwitchTheme from "./commons/Theme";
 
-const Navbar = () => {
+const Navbar = ({userId}) => {
+
   return (
     <div className="navbar sticky top-0 z-50 bg-base-100 ">
       <div className="navbar-start">
@@ -75,7 +76,17 @@ const Navbar = () => {
             Contact
           </Link>
         </div>
-        <a className="btn bg-accent mr-5 hover:bg-sec border-0">Get started</a>
+        {/* <a className="btn bg-accent mr-5 hover:bg-sec border-0">Login</a> */}
+        {!userId ? (
+          <Link
+            href="/sign-in"
+            className="btn bg-accent mr-5 hover:bg-sec border-0"
+          >
+            Login
+          </Link>
+        ) : (
+          <UserButton afterSignOutUrl="/" />
+        )}
         <SwitchTheme />
       </div>
     </div>

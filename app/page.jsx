@@ -1,6 +1,10 @@
 import { Card, Hero, Sidebar } from "@/components";
 import { products } from "@/data/card";
+import { auth } from "@clerk/nextjs";
+// export const { userId } = auth();
+
 export default function Home() {
+  const { userId } = auth();
   return (
     <main className="">
       {/* Navbar is inside layout and wraps this main component */}

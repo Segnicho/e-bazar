@@ -1,7 +1,8 @@
-import Layout from "@/components/Layout";
 import "./globals.css";
 import { Inter } from "next/font/google";
-
+import { ClerkProvider } from "@clerk/nextjs";
+import { Navbar } from "@/components";
+import { auth } from "@clerk/nextjs";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -10,11 +11,16 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const { userId } = auth();
+
   return (
-    <html lang="en">
-      <body className="min-h-screen bg-bodybg">
-        <Layout>{children}</Layout>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className="min-h-screen bg-bodybg">
+          <Navbar userId={userId} />
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
